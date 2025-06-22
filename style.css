@@ -1,0 +1,266 @@
+html {
+ scroll-behavior: smooth;
+}
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: #ffffff;
+ color: #000000;
+}
+ nav {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1030;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #858383;
+ padding: 10px 20px;
+ }
+ .nav-itens a {
+ color: #ffffff;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ font-size: 16px;
+ }
+ .nav-itens a:hover {
+ color: #0d3b1b;
+ }
+ #btnTema {
+ background-color: #00ff48;
+ border: none;
+ padding: 8px 12px;
+ color: #fff;
+ font-weight: bold;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+.topo {
+ position: relative;
+ width: 100%;
+}
+.perfil img {
+ width: 50%;
+ height: auto;
+ display: block;
+ object-fit: cover;
+}
+.descricao {
+    position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.descricao h1 {
+ font-family: 'DM Serif Display', serif;
+ font-style: italic;
+ font-size: 45px;
+ line-height: 52px;
+ margin: 10px 0;
+}
+.descricao h2 {
+ font-family: 'DM Sans', sans-serif;
+ font-size: 32px;
+ font-weight: 600;
+ line-height: 40px;
+ letter-spacing: 2px;
+ margin: 10px 0;
+}
+.secao {
+ display: flex;
+ gap: 50px;
+ align-items: center;
+ padding: 122px;
+}
+.texto {
+ flex: 1;
+}
+.texto h3 {
+ font-family: 'DM Serif Display', serif;
+ font-style: italic;
+ font-size: 72px;
+line-height: 80px;
+ margin-bottom: 30px;
+}
+.texto p {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 20px;
+ line-height: 30px;
+ width: 100%;
+}
+.imagem img {
+ max-width: 400px;
+ border-radius: 4px;
+}
+.galeria {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 10px;
+ margin: 20px 60px;
+}
+.galeria img {
+ width: calc(25% - 10px);
+ object-fit: cover;
+ border-radius: 4px;
+}
+.galeria-imagens {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 10px;
+ margin: 20px 60px;
+}
+galeria-imagens img {
+ width: calc(25% - 10px);
+ object-fit: cover;
+ border-radius: 4px;
+}
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1024px) {
+ .texto h3 {
+ font-size: 56px;
+ line-height: 64px;
+ }
+ .texto p {
+ font-size: 18px;
+ line-height: 28px;
+ }
+ .secao {
+ padding: 80px;
+ flex-direction: column;
+ gap: 30px;
+ }
+ .imagem img {
+ max-width: 90%;
+ }
+ .galeria img,
+ .galeria-imagens img {
+ width: calc(33.33% - 10px);
+ }
+}
+@media (max-width: 768px) {
+ nav {
+flex-wrap: wrap;
+ padding: 10px;
+ }
+ .nav-itens a {
+ font-size: 14px;
+ }
+ #btnTema {
+ padding: 6px 10px;
+ }
+ .descricao {
+ padding: 0 20px;
+ max-width: 90%;
+ left: 50%;
+ top: 45%;
+ transform: translate(-50%, -45%);
+ }
+ .descricao h1 {
+ font-size: 24px;
+ line-height: 30px;
+ }
+ .descricao h2 {
+ font-size: 16px;
+ line-height: 22px;
+ letter-spacing: 1px;
+ }
+ .secao {
+ padding: 40px 10px;
+ flex-direction: column;
+ gap: 20px;
+ }
+ .texto h3 {font-size: 28px;
+ line-height: 36px;
+ text-align: center;
+ }
+ .texto p {
+ font-size: 14px;
+ line-height: 22px;
+ }
+ .imagem img {
+ max-width: 100%;
+ }
+ .galeria img,
+ .galeria-imagens img {
+ width: calc(100% - 10px);
+ }
+}
+@media (max-width: 768px) {
+ nav {
+ flex-wrap: wrap;
+ padding: 10px;
+ }
+ .nav-itens a {
+ font-size: 14px;
+ }
+ #btnTema {
+ padding: 6px 10px;
+ }
+ .descricao {
+ padding: 0 10px;
+ }
+ .descricao h1 {font-size: 24px;
+ line-height: 30px;
+ }
+ .descricao h2 {
+ font-size: 16px;
+ line-height: 22px;
+ letter-spacing: 1px;
+ }
+ .secao {
+ padding: 40px 10px;
+ flex-direction: column;
+ gap: 20px;
+ }
+ .texto h3 {
+ font-size: 28px;
+ line-height: 36px;
+ text-align: center;
+ }
+ .texto p {
+ font-size: 14px;
+ line-height: 22px;
+ }
+ .imagem img {
+ max-width: 100%;
+ }
+ .galeria img,
+ .galeria-imagens img {
+ width: calc(100% - 10px);
+ }
+}
+@media (max-width: 480px) {
+ .descricao h1 {
+ font-size: 20px;
+ line-height: 26px;
+ }
+ .descricao h2 {
+ font-size: 14px;
+ line-height: 20px;
+ letter-spacing: 0.5px;
+ }
+ .secao {
+ padding: 20px 10px;
+ }
+ .texto h3 {
+ font-size: 24px;
+ line-height: 32px;
+ text-align: center;
+ }
+ .texto p {
+ font-size: 12px;
+ line-height: 18px;
+ }
+ .imagem img {
+ max-width: 100%;
+ }
+ .galeria img,
+ .galeria-imagens img {
+ width: calc(100% - 10px);
+ }
+}
